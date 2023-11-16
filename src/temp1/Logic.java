@@ -1,7 +1,7 @@
 package temp1;
 public class Logic {
 
-    private int antalOrd;   //skapar fyra attribut som inte innehåller några värden
+    private int antalOrd;   //skapar tre attribut som inte innehåller några värden
     private int antalTecken;
     private int antalRader;
 
@@ -9,13 +9,13 @@ public class Logic {
     public Logic() {  //här skapar jag en kontruktorn som utförs kod som vi skriver in
         //när vi skapar ett objekt av klassen Logic
 
-        int antalOrd = 0;
-        int antalTecken = 0;
-        int antalRader = 0;     //tilldelar ett värde till int variabler
+        antalOrd = 0;
+        antalTecken = 0;
+        antalRader = 0;     //initierar våra int variabler
 
     }
 
-    public void antalTecken(String input) {  //här så deklarerar jag string variabel som heter antalTecken
+    public void antalTecken(String input) {  //här så deklarerar jag string variabel
 
 
         antalTecken = antalTecken + input.length(); //sätter in värdet på antalTecken till summan av input.length
