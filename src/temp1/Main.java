@@ -32,7 +32,7 @@ public class Main  {
         System.out.println("Skriv stop för att avsluta! ");
         System.out.println("--------------------------------");
 
-        r.input = r.scan.next(); //scan.next här läser ut antal tecken utan space
+        r.input = r.scan.next();   //sparar våra input
         r.programIsRunning(r.input);
 
 
