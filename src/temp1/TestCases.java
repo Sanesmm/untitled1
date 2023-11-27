@@ -2,19 +2,12 @@ package temp1;
 
 import org.junit.Test;
 
+
 import static org.junit.Assert.assertEquals;
 
     public class TestCases {
 
-        @Test
-        public void firstTestCase(){
-            //vi vill kontrollera att längden på input fungerar som den ska
-            String input = " ";
-            int actual = input.length();
-            int expected = 1;
-            assertEquals(expected, actual);
 
-        }
         @Test
         public void getAntalTecken(){
             //Arrange
@@ -32,12 +25,22 @@ import static org.junit.Assert.assertEquals;
         public void getAntalRader()
         {
             Logic logic = new Logic();
-
+            String input = " ";        //här så kollar jag längden på antal rader
             int expected = 0;
-            int actual = logic.getAntalRader();
+            int actual = logic.getAntalRader(input.length());
 
 
             assertEquals(expected, actual);
+        }
+
+        @Test
+        public void thirdTest(){
+
+            Logic logic = new Logic();
+            int actual = logic.add();   //här så jämför jag om antaOrd och antalTecken är lika med 0
+            int expected = 0;
+            assertEquals(expected, actual);
+
         }
 
 
